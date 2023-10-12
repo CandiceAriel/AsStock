@@ -207,7 +207,12 @@ a, a:link, a:visited {
   justify-content: center;
 }
 
-.button__wrapper-secondary{
+.button__wrapper--primary{
+  color: var(--black)!important;
+  background-color: var(--primary);
+}
+
+.button__wrapper--secondary{
   color: #fff!important;
   border: 1px solid #fff;
   background-color: transparent;
@@ -215,7 +220,7 @@ a, a:link, a:visited {
   padding-right: 1.125rem;
 }
 
-.button__wrapper-tertiary{
+.button__wrapper--tertiary{
   font-weight: 700;
     color: #333;
     background-color: #fff;
@@ -234,6 +239,11 @@ a, a:link, a:visited {
   padding: 20px 30px;
 }
 
+.button__download{
+  max-width: 280px;
+    width: 100%;
+}
+
 .content__wrapper{
   min-width: 320px;
 }
@@ -247,11 +257,13 @@ a, a:link, a:visited {
   background-color: #212121;
 }
 
-.image-details__wrapper-displayer{
+.image-details__wrapper-viewer{
   background-color: #252525;
     position: relative;
+    width: 100%;
     max-width: 2560px;
     margin: auto;
+    display: flex;
 }
 
 .searchbar{
@@ -424,6 +436,11 @@ a, a:link, a:visited {
   text-decoration: underline dotted #fff;
   text-underline-offset: 3px;
   cursor: pointer;
+}
+
+.image-download__wrapper{
+  max-width: 280px;
+  width: 100%;
 }
 
 @media (min-width:765px){
