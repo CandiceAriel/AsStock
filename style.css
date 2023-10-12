@@ -113,7 +113,6 @@ a, a:link, a:visited {
 }
 
 .header__wrapper{
-  height: 68px;
   width: 100%;
   padding: 16px;
   display: flex;
@@ -265,15 +264,11 @@ a, a:link, a:visited {
 .image-details__wrapper-viewer{
   background-color: #252525;
     position: relative;
-    width: 100%;
     max-width: 2560px;
     margin: auto;
-    display: flex;
 }
 
 .image-details__content{
-  width: 79%;
-  border-right: 1px solid #595959;
 }
 
 .searchbar{
@@ -372,6 +367,7 @@ a, a:link, a:visited {
   align-items: center;
   padding: 0 24px;
   min-height: 54px;
+  max-width: 2560px;
   background-color: #0d0d0d;
 }
 
@@ -389,6 +385,12 @@ a, a:link, a:visited {
   padding: 8px 0;
   display: flex;
   align-items: center;
+}
+
+.image-viewer__container{
+  display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .image-viewer__wrapper{
@@ -459,9 +461,15 @@ a, a:link, a:visited {
   color: hsla(0,0%,100%,.7);
 }
 
-@media (min-width:765px){
+@media (min-width:768px){
   .searchbar__ai-button{
     border-radius: 0 3px 3px 0!important;
+  }
+
+  .image-viewer__wrapper {
+    max-height: 553px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -478,6 +486,12 @@ a, a:link, a:visited {
 
   .image__information{
     padding: 0 30px;
+    width: calc(100% - 260px);
+  }
+
+  .image-viewer__container{
+    margin: auto;
+    transform: translateX(-130px);
   }
 
   .image-viewer__wrapper {
@@ -487,16 +501,15 @@ a, a:link, a:visited {
   }
 
   .image-download__wrapper{
+    height: 97%;
+    display: flex;
     flex-direction: column;
     padding: 10px 10px 15px;
     margin: 0;
     left: 0;
     right: 0;
     justify-content: flex-start!important;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 100%;
-    width: 300px;
+    border-left: 1px solid #595959;
   }
 
   .image-download__container{
@@ -507,5 +520,25 @@ a, a:link, a:visited {
     position: absolute;
     right: 0;
     top: 0;
+    background-color: #0d0d0d;
+  }
+}
+
+@media (min-width: 1440px){
+  .image__information{
+    width: calc(100% - 360px);
+  }
+
+  .image-viewer__container{
+    margin: auto;
+    transform: translateX(-150px);
+  }
+
+  .image-viewer__footer{
+    width: calc(100% - 300px);
+  }
+
+  .image-download__container{
+    width: 300px;
   }
 }
