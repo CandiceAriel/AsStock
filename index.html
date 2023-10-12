@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div style="background-color: #212121;">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__container">
+            <div class="header__item header__logo">
+              <picture>
+                <source srcset="https://assets-cdn.123rf.com/ui-components/assets/images/123rf-logo-white.webp" type="image/webp">
+                <img alt="123RF Logo" src="https://assets-cdn.123rf.com/ui-components/assets/images/123rf-logo-white.png" height="24px" width="128px">
+              </picture>
+            </div>
+            <div class="header__item d-lg-inline-flex d-none pl-10">
+              <span>Home</span>
+              <div class="header__item mb-15">
+                <span class="header__divider">|</span>
+                <span>PLUS</span>
+              </div>
+              <div class="header__item mb-15">
+                <span class="header__divider">|</span>
+                <span>Free Images</span>
+              </div>
+              <div class="header__item mb-15">
+                <span class="header__divider">|</span>
+                <span>Corporate+</span>
+              </div>
+              <div class="header__item mb-15">
+                <span class="header__divider">|</span>
+                <span>Tools</span>
+              </div>
+            </div>
+          </div>
+          <div class="header__container">
+            <div class="header__item d-lg-inline-flex d-none pl-10">
+              <div class="header__item header__item-pricing mb-15">
+                <span>PRICING</span>
+              </div>
+              <div class="header__item mb-15">
+                <span>Support</span>
+              </div>
+              <div class="header__item mb-15">
+                <span>En</span>
+              </div>
+              <div class="header__item mb-15">
+                <span>Log In</span>
+              </div>
+              <div class="header__item mb-15">
+                <button id="header-button-signup" data-testid="header-button-signup" type="button" class="button__wrapper button__wrapper-secondary px-18 py-10" tabindex="0">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subheader__wrapper">
+          <div class="subheader__container d-lg-inline-flex">
+            <span class="subheader__item">Photos</span>
+            <span class="subheader__item">Vectors</span>
+            <span class="subheader__item">Video</span>
+            <span class="subheader__item">Audio</span>
+            <span class="subheader__item">Fonts</span>
+            <span class="subheader__item">AI Image Generator</span>
+            <span class="subheader__item">AI Writer <span class="subheader__new-link">NEW</span></span>
+          </div>
+        </div>
+      </header>
+      <div class="content__wrapper">
+        <div class="content__container">
+          <div class=" image-details__wrapper image-details__wrapper-header">
+            <div class="searchbar">
+              <div class="searchbar__wrapper">
+                <form class="input-group searchbar__container">
+                  <button type="button" class="button button__wrapper button__link button__wrapper--iconOnly button__wrapper--colorless searchbar__button searchbar__ai-button" tabindex="0">
+                    <img alt="AI Powered Search" src="https://assets-cdn.123rf.com/ui-components/assets/svg/ai-powered-search.svg">
+                  </button>
+                  <input id="mainsearchbar-input" class="form-control searchbar__input" type="text" name="keyword" aria-label="keyword" placeholder="Type in your search here" autocomplete="off" value="">
+                  <div class="SearchBar__dragAndDropContainer">
+                    <button id="mainsearchbar-reverseSearch-btn" data-testid="mainsearchbar-reverseSearch-btn" type="button" class="button button__wrapper button__link button__wrapper--icon-only button__wrapper--colorless SearchBar__reverse-search-button" tabindex="0">
+                      <img alt="Camera" src="https://assets-cdn.123rf.com/ui-components/assets/svg/camera.svg" class="black-svg" height="32px" width="32px">
+                    </button>
+                   
+                </form> 
+              </div>
+            </div>
+          </div>
+          <div class=" image-details__wrapper image-details__wrapper-displayer">
+            <div class="image-details__content">
+              <div>
+                <h1></h1>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
