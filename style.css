@@ -227,6 +227,10 @@ a, a:link, a:visited {
     border: 1px solid var(--dark-gray);
 }
 
+.button__wrapper--icon {
+  padding: 9px 36px;
+}
+
 .button__wrapper-icon-only {
   height: 44px;
   width: 44px;
@@ -241,7 +245,8 @@ a, a:link, a:visited {
 
 .button__download{
   max-width: 280px;
-    width: 100%;
+  width: 100%;
+  border-radius: 28px;
 }
 
 .content__wrapper{
@@ -266,6 +271,11 @@ a, a:link, a:visited {
     display: flex;
 }
 
+.image-details__content{
+  width: 79%;
+  border-right: 1px solid #595959;
+}
+
 .searchbar{
   max-width: 2560px;
   margin: auto;
@@ -273,8 +283,6 @@ a, a:link, a:visited {
 }
 
 .searchbar__wrapper {
-  width: 100%;
-  max-width: 1871px;
   position: relative;
 }
 
@@ -364,6 +372,7 @@ a, a:link, a:visited {
   align-items: center;
   padding: 0 24px;
   min-height: 54px;
+  background-color: #0d0d0d;
 }
 
 .image-details__title{
@@ -403,7 +412,6 @@ a, a:link, a:visited {
 
 .image-viewer__footer_wrapper{
   display: flex;
-  width: 100%!important;
     height: 100%;
     box-shadow: 0 4px 34px rgba(0,0,0,.9);
     padding: 0 16px;
@@ -443,6 +451,14 @@ a, a:link, a:visited {
   width: 100%;
 }
 
+.image-download__title{
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: hsla(0,0%,100%,.7);
+}
+
 @media (min-width:765px){
   .searchbar__ai-button{
     border-radius: 0 3px 3px 0!important;
@@ -457,7 +473,7 @@ a, a:link, a:visited {
 
 @media (min-width: 1200px){
   .searchbar__wrapper {
-    margin: 12px auto;
+    margin: 12px 16px;
   }
 
   .image__information{
@@ -468,5 +484,28 @@ a, a:link, a:visited {
     max-height: 580px;
     margin-top: 30px;
     margin-bottom: 30px;
-}
+  }
+
+  .image-download__wrapper{
+    flex-direction: column;
+    padding: 10px 10px 15px;
+    margin: 0;
+    left: 0;
+    right: 0;
+    justify-content: flex-start!important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    width: 300px;
+  }
+
+  .image-download__container{
+    width: auto;
+    height: 100%;
+    align-self: stretch;
+    flex: 1 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
