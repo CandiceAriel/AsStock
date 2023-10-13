@@ -1,138 +1,484 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Page Title</title>
-  </head>
-  <body>
-    <div style="background-color: #212121;">
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__container">
-            <div class="header__item header__logo">
-              <picture>
-                <source srcset="https://assets-cdn.123rf.com/ui-components/assets/images/123rf-logo-white.webp" type="image/webp">
-                <img alt="123RF Logo" src="https://assets-cdn.123rf.com/ui-components/assets/images/123rf-logo-white.png" height="24px" width="128px">
-              </picture>
-            </div>
-            <div class="header__item d-lg-inline-flex d-none pl-10">
-              <span>Home</span>
-              <div class="header__item mb-15">
-                <span class="header__divider">|</span>
-                <span>PLUS</span>
+<html>
+
+<head>
+  <title>AsStock</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="page__container">
+    <div class="section--top">
+      <div class="bg--dark">
+        <div class="header">
+          <div class="header__wrapper">
+            <div class="header__container">
+              <div class="header__item header__logo">
+                <picture>
+                  <source srcset="https://assets-cdn.123rf.com/ui-components/assets/images/123rf-logo-white.webp"
+                    type="image/webp">
+                  <img alt="123RF Logo"
+                    src="https://assets-cdn.123rf.com/ui-components/assets/images/123rf-logo-white.png" height="24px"
+                    width="128px">
+                </picture>
               </div>
-              <div class="header__item mb-15">
-                <span class="header__divider">|</span>
-                <span>Free Images</span>
-              </div>
-              <div class="header__item mb-15">
-                <span class="header__divider">|</span>
-                <span>Corporate+</span>
-              </div>
-              <div class="header__item mb-15">
-                <span class="header__divider">|</span>
-                <span>Tools</span>
-              </div>
-            </div>
-          </div>
-          <div class="header__container">
-            <div class="header__item d-lg-inline-flex d-none pl-10">
-              <div class="header__item header__item-pricing mb-15">
-                <span>PRICING</span>
-              </div>
-              <div class="header__item mb-15">
-                <span>Support</span>
-              </div>
-              <div class="header__item mb-15">
-                <span>En</span>
-              </div>
-              <div class="header__item mb-15">
-                <span>Log In</span>
-              </div>
-              <div class="header__item mb-15">
-                <button id="header-button-signup" data-testid="header-button-signup" type="button" class="button__wrapper button__wrapper--secondary px-18 py-10" tabindex="0">
-                  Sign Up
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="subheader__wrapper">
-          <div class="subheader__container d-lg-inline-flex">
-            <span class="subheader__item">Photos</span>
-            <span class="subheader__item">Vectors</span>
-            <span class="subheader__item">Video</span>
-            <span class="subheader__item">Audio</span>
-            <span class="subheader__item">Fonts</span>
-            <span class="subheader__item">AI Image Generator</span>
-            <span class="subheader__item">AI Writer <span class="subheader__new-link">NEW</span></span>
-          </div>
-        </div>
-      </header>
-      <div class="content__wrapper">
-        <div class="content__container">
-          <div class=" image-details__wrapper image-details__wrapper-header">
-            <div class="searchbar">
-              <div class="searchbar__wrapper">
-                <form class="input-group searchbar__container">
-                  <button type="button" class="button button__wrapper button__link button__wrapper-iconOnly button__wrapper-colorless searchbar__button searchbar__ai-button" tabindex="0">
-                    <img alt="AI Powered Search" src="https://assets-cdn.123rf.com/ui-components/assets/svg/ai-powered-search.svg">
-                  </button>
-                  <input id="mainsearchbar-input" class="form-control searchbar__input" type="text" name="keyword" aria-label="keyword" placeholder="Type in your search here" autocomplete="off" value="">
-                  <div class="SearchBar__dragAndDropContainer">
-                    <button id="mainsearchbar-reverseSearch-btn" data-testid="mainsearchbar-reverseSearch-btn" type="button" class="button button__wrapper button__link button__wrapper--icon-only button__wrapper--colorless SearchBar__reverse-search-button" tabindex="0">
-                      <img alt="Camera" src="https://assets-cdn.123rf.com/ui-components/assets/svg/camera.svg" class="black-svg" height="32px" width="32px">
-                    </button>
-                   
-                </form> 
-              </div>
-            </div>
-          </div>
-          <div class=" image-details__wrapper image-details__wrapper-viewer">
-            <div class="image-details__content">
-              <div class="image__information">
-                <h1 class="image-details__title">Level selection screen. Sunny hills level concept. Creative ui templates set for web mobile and computer video games</h1>
-                <button type="button" class="button__wrapper button__wrapper--secondary px-18 py-10" tabindex="0">
-                  <svg width="18" height="18" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3438 5.79377L12.9688 8.41877L6.40625 14.9813L3.125 15.6375L3.78125 12.3563L10.3438 5.79377ZM15.5938 3.16877C16.3184 3.89367 16.3185 5.06835 15.5941 5.7934L14.2812 7.10627L12.9761 5.80111C12.9737 5.79867 12.9712 5.79622 12.9688 5.79377L12.9612 5.78625L11.6562 4.48127L12.9614 3.17615C12.9639 3.17368 12.9663 3.17122 12.9688 3.16877C13.6935 2.44374 14.869 2.44374 15.5938 3.16877Z" fill="#FFFFFF"></path></svg>
-                  Edit Image
-                </button>
-              </div>
-              <div class="image-viewer__container">
-                <div class="image-viewer__wrapper">
-                  <img src="https://previews.123rf.com/images/magurok/magurok1506/magurok150600014/41086401-level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.jpg" alt="Level selection screen. Sunny hills level concept. Creative ui templates set for web mobile and computer video games - 41086401" title="Level selection screen. Sunny hills level concept. Creative ui templates set for web mobile and computer video games - 41086401" intrinsicsize="5000x5000" style="clip-path: inset(0%); width: 580px; height: 580px;" class="image__display_image">
+              <div class="header__item d-lg-inline-flex d-none pl-10">
+                <span>Home</span>
+                <div class="header__item mb-15">
+                  <span class="header__divider">|</span>
+                  <span>PLUS</span>
+                </div>
+                <div class="header__item mb-15">
+                  <span class="header__divider">|</span>
+                  <span>Free Images</span>
+                </div>
+                <div class="header__item mb-15">
+                  <span class="header__divider">|</span>
+                  <span>Corporate+</span>
+                </div>
+                <div class="header__item mb-15">
+                  <span class="header__divider">|</span>
+                  <span>Tools</span>
                 </div>
               </div>
-              <div class="image-viewer__footer m-0">
-                <div class="image-viewer__footer_wrapper">
-                  <div class="image-viewer__footer_button_wrapper m-auto">
-                    <button type="button" class="button__generate-ai button__wrapper button__wrapper--tertiary" tabindex="0">
-                      Generate variations
+            </div>
+            <div class="header__container">
+              <div class="header__item d-lg-inline-flex d-none pl-10">
+                <div class="header__item header__item-pricing mb-15">
+                  <span>PRICING</span>
+                </div>
+                <div class="header__item mb-15">
+                  <span>Support</span>
+                </div>
+                <div class="header__item mb-15">
+                  <span>EN<img alt="Chevron Down"
+                      src="https://assets-cdn.123rf.com/ui-components/assets/svg/chevron-down.svg"
+                      class="searchbar-category__wrapper--icon black-svg" height="20px" width="20px"></span>
+                </div>
+                <div class="header__item mb-15">
+                  <span>Log In</span>
+                </div>
+                <div class="header__item mb-15">
+                  <button id="header-button-signup" data-testid="header-button-signup" type="button"
+                    class="button__wrapper button__wrapper--secondary--light px-18 py-10" tabindex="0">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subheader__wrapper">
+            <div class="subheader__container d-lg-inline-flex">
+              <span class="subheader__item">Photos</span>
+              <span class="subheader__item">Vectors</span>
+              <span class="subheader__item">Video</span>
+              <span class="subheader__item">Audio</span>
+              <span class="subheader__item">Fonts</span>
+              <span class="subheader__item">AI Image Generator</span>
+              <span class="subheader__item">AI Writer <span class="subheader__new-link">NEW</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="content__wrapper">
+          <div class="content__container">
+            <div class=" image-details__wrapper image-details__wrapper-header">
+              <div class="searchbar">
+                <div class="searchbar__wrapper">
+                  <form class="input-group searchbar__container">
+                    <button type="button"
+                      class="button button__wrapper button__link button__wrapper-colorless searchbar__button searchbar__ai-button"
+                      tabindex="0">
+                      <img alt="AI Powered Search"
+                        src="https://assets-cdn.123rf.com/ui-components/assets/svg/ai-powered-search.svg">
                     </button>
-                    <div class="image-viewer__footer_generate-note">
-                      <div class="image-viewer__footer_generate-note_text">Generate images with AI</div>
-                      <div id="generate-note" class="image-viewer__footer_generate-note_note">
-                        <span>Important Note</span>
+                    <input class="form-control searchbar__input" type="text" name="keyword" aria-label="keyword"
+                      placeholder="Type in your search here" autocomplete="off" value="">
+                    <div class="searchbar__buttons_container">
+                      <button type="button"
+                        class="button button__wrapper button__link button__wrapper--icon-only button__wrapper--colorless"
+                        tabindex="0">
+                        <img alt="Camera" src="https://assets-cdn.123rf.com/ui-components/assets/svg/camera.svg"
+                          class="black-svg" height="32px" width="32px">
+                      </button>
+                      <div class="input-group__text searchbar-search__container">
+                        <div class="searchbar__seperator_container">
+                          <div class="searchbar__seperator"></div>
+                        </div>
+                        <div class="searchbar-category__wrapper">
+                          <div class="searchbar-category__content">
+                            <img alt="All Images"
+                              src="https://assets-cdn.123rf.com/ui-components/assets/svg/all-images.svg"
+                              class="searchbar-category_icon black-svg">
+                            <span class="border-bottom-0 SearchFilterCategoryDropdown__wrapper--text">All Images</span>
+                            <img alt="Chevron Down"
+                              src="https://assets-cdn.123rf.com/ui-components/assets/svg/chevron-down.svg"
+                              class="searchbar-category__wrapper--icon black-svg" height="20px" width="20px">
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit"
+                        class="button button__wrapper button__link button__wrapper--primary searchbar-search__button"
+                        tabindex="0" aria-label="Search Submit Button">
+                        <img alt="Search" src="https://assets-cdn.123rf.com/ui-components/assets/svg/search.svg"
+                          class="black-svg" height="32px" width="32px">
+                      </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class=" image-details__wrapper image-details__wrapper-viewer">
+              <div class="image-details__content">
+                <div class="image__information">
+                  <h1 class="image-details__title">Level selection screen. Sunny hills level concept. Creative ui templates set for web mobile and computer video games</h1>
+                  <button type="button" class="button__wrapper button__wrapper--secondary--light px-18 py-10" tabindex="0">
+                    <svg width="18" height="18" viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10.3438 5.79377L12.9688 8.41877L6.40625 14.9813L3.125 15.6375L3.78125 12.3563L10.3438 5.79377ZM15.5938 3.16877C16.3184 3.89367 16.3185 5.06835 15.5941 5.7934L14.2812 7.10627L12.9761 5.80111C12.9737 5.79867 12.9712 5.79622 12.9688 5.79377L12.9612 5.78625L11.6562 4.48127L12.9614 3.17615C12.9639 3.17368 12.9663 3.17122 12.9688 3.16877C13.6935 2.44374 14.869 2.44374 15.5938 3.16877Z"
+                        fill="#FFFFFF"></path>
+                    </svg>
+                    Edit Image
+                  </button>
+                </div>
+                <div class="image-viewer__container">
+                  <div class="image-viewer__wrapper">
+                    <img
+                      src="https://previews.123rf.com/images/magurok/magurok1506/magurok150600014/41086401-level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.jpg"
+                      alt="Level selection screen. Sunny hills level concept. Creative ui templates set for web mobile and computer video games - 41086401"
+                      title="Level selection screen. Sunny hills level concept. Creative ui templates set for web mobile and computer video games - 41086401"
+                      intrinsicsize="5000x5000" style="clip-path: inset(0%); width: 580px; height: 580px;"
+                      class="image__display_image">
+                  </div>
+                </div>
+                <div class="image-viewer__footer m-0">
+                  <div class="image-viewer__footer_wrapper">
+                    <div class="image-viewer__footer_button_wrapper m-auto">
+                      <button type="button" class="button__generate-ai button__wrapper button__wrapper--tertiary"
+                        tabindex="0">
+                        Generate variations
+                      </button>
+                      <div class="image-viewer__footer_generate-note">
+                        <div class="image-viewer__footer_generate-note_text">Generate images with AI</div>
+                        <div id="generate-note" class="image-viewer__footer_generate-note_note">
+                          <span>Important Note</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="image-download__container">
-              <div class="image-download__wrapper">
-                <div class="mb-8 mb-xl-15 image-download__title">
-                  <span>Standard Sizes</span>
-                  <span id="license-standard" class="ImageDetailsSize__title--tooltip-icon">
-                    <svg class="" focusable="false" viewBox="0 0 48 48" color="var(--white)" data-testid="InformationIcon" aria-labelledby="Information" style="font-size: 16px; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; flex-shrink: 0; user-select: none; width: 16px; height: 16px; display: inline-block; fill: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 8.45455C15.4284 8.45455 8.45455 15.4275 8.45455 24C8.45455 32.5725 15.4284 39.5455 24 39.5455C32.5716 39.5455 39.5455 32.5725 39.5455 24C39.5455 15.4275 32.5716 8.45455 24 8.45455ZM24 43C13.5232 43 5 34.4768 5 24C5 13.5232 13.5232 5 24 5C34.4768 5 43 13.5232 43 24C43 34.4768 34.4768 43 24 43Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.7272 15.3636C25.7272 14.4102 24.9534 13.6364 24 13.6364C23.0465 13.6364 22.2727 14.4102 22.2727 15.3636C22.2727 16.3171 23.0465 17.0909 24 17.0909C24.9534 17.0909 25.7272 16.3171 25.7272 15.3636Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2727 34.3637H25.7272V20.5455H22.2727V34.3637Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2727 17.0909H25.7272V13.6364H22.2727V17.0909Z"></path>
-                    </svg>
-                  </span>
+              <div class="image-download__container">
+                <div class="image-download__wrapper">
+                  <div class="mb-8 mb-xl-15 image-download__title">
+                    <span>Standard Sizes</span>
+                    <span id="license-standard" class="ImageDetailsSize__title--tooltip-icon">
+                      <svg class="" focusable="false" viewBox="0 0 48 48" color="var(--white)"
+                        data-testid="InformationIcon" aria-labelledby="Information"
+                        style="font-size: 16px; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; flex-shrink: 0; user-select: none; width: 16px; height: 16px; display: inline-block; fill: currentcolor;">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M24 8.45455C15.4284 8.45455 8.45455 15.4275 8.45455 24C8.45455 32.5725 15.4284 39.5455 24 39.5455C32.5716 39.5455 39.5455 32.5725 39.5455 24C39.5455 15.4275 32.5716 8.45455 24 8.45455ZM24 43C13.5232 43 5 34.4768 5 24C5 13.5232 13.5232 5 24 5C34.4768 5 43 13.5232 43 24C43 34.4768 34.4768 43 24 43Z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M25.7272 15.3636C25.7272 14.4102 24.9534 13.6364 24 13.6364C23.0465 13.6364 22.2727 14.4102 22.2727 15.3636C22.2727 16.3171 23.0465 17.0909 24 17.0909C24.9534 17.0909 25.7272 16.3171 25.7272 15.3636Z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M22.2727 34.3637H25.7272V20.5455H22.2727V34.3637Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M22.2727 17.0909H25.7272V13.6364H22.2727V17.0909Z"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="image-download__opt_wrapper">
+                    <div class="image-download__opt">
+                      <span class="image-download__size">M</span>
+                      <span class="image-download__dpi">2048 x 2048 px</span>
+                      <span class="image-download__cm">17.3 x 17.3 cm • 300 dpi</span>
+                    </div>
+                    <div class="image-download__opt">
+                      <span class="image-download__size">L</span>
+                      <span class="image-download__dpi">5000 x 5000 px</span>
+                      <span class="image-download__cm">42.3 x 42.3 cm • 300 dpi</span>
+                    </div>
+                    <div class="image-download__opt">
+                      <span class="image-download__size">XL</span>
+                      <span class="image-download__dpi">7500 x 7500 px</span>
+                      <span class="image-download__cm">63.5 x 63.5 cm • 300 dpi</span>
+                    </div>
+                    <div class="image-download__opt">
+                      <span class="image-download__size">V</span>
+                      <span class="image-download__dpi">SVG or EPS</span>
+                    </div>
+                  </div>
+                  <button id="buttonDownload" type="button"
+                    class="button button__wrapper button__wrapper--primary button__wrapper--icon button__download"
+                    tabindex="0">
+                    <img class="Button__icon"
+                      src="https://assets-cdn.123rf.com/ui-components/assets/images/download-icon.png"
+                      alt="Download button icon">
+                    Download
+                  </button>
                 </div>
-                <button type="button" class="button button__wrapper button__wrapper--primary button__wrapper--icon button__download" tabindex="0"><img class="Button__icon" src="https://assets-cdn.123rf.com/ui-components/assets/images/download-icon.png" alt="Download button icon">Download</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+    <div class="section--bottom">
+      <div class="image-information__container">
+        <div class="image-information__content_top dp-flex">
+          <div class="image-information__uploader">
+            <img src="https://assets.123rf.com/contributor_avatars/default.png">
+            <a class="uploader-username__link"> Username </a>
+            <button id="follow-button" type="button" class="button button__wrapper button__link button__wrapper--round button__wrapper--secondary button__follow" tabindex="0">
+              Follow
+            </button>
+          </div>
+          <div class="image-information__like like__button_wrapper">
+            <div class="button__heart" role="button" tabindex="0">
+              <img src="https://assets-cdn.123rf.com/ui-components/assets/images/heart-icon-overlay.svg" id="add-to-likebox" alt="Add to My Collections" title="Add to My Collections">
+            </div>
+          </div>
+          <div class="image-information__more more__button_wrapper">
+            <div class="button__more" role="button" tabindex="0">
+              <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.7369 29.5263C35.8301 29.5263 33.4738 27.1699 33.4738 24.2631C33.4738 21.3564 35.8301 19 38.7369 19C41.6436 19 44 21.3564 44 24.2631C44 27.1699 41.6436 29.5263 38.7369 29.5263Z" fill="#212121"></path>
+                <path d="M24.0003 29.5263C21.0935 29.5263 18.7372 27.1699 18.7372 24.2631C18.7372 21.3564 21.0935 19 24.0003 19C26.907 19 29.2634 21.3564 29.2634 24.2631C29.2634 27.1699 26.907 29.5263 24.0003 29.5263Z" fill="#212121"></path>
+                <path d="M9.26305 29.5263C6.3563 29.5263 3.99992 27.1699 3.99992 24.2631C3.99992 21.3564 6.3563 19 9.26305 19C12.1698 19 14.5262 21.3564 14.5262 24.2631C14.5262 27.1699 12.1698 29.5263 9.26305 29.5263Z" fill="#212121"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="image-information__detail">
+          <img alt="image-id" src="https://assets-cdn.123rf.com/ui-components/assets/svg/id.svg" width="16px" height="16px">
+          <b>41086401</b>
+        </div>
+        <div class="image-information__detail">
+          <img alt="image-type" src="https://assets-cdn.123rf.com/ui-components/assets/svg/photos.svg" width="16px" height="16px">
+          <a id="image-type" class="image-information__link" href="/clipart-vector/">Stock Vector</a>
+          <span class="ml-10 font-weight-bold">(SVG or EPS)</span>
+        </div>
+        <div class="related-keyword__container">
+          <span class="ml-10 font-weight-bold">Related Stock Photo Searches</span>
+            <div class="tags__container">
+              <div id="details-keyword" class="tags__button_container">
+                <div>
+                  <a class="tag keywords__badge" id="detailskw-lock" href="/clipart-vector/lock.html">lock</a>
+                </div>
+                <div>
+                  <a class="tag keywords__badge" id="detailskw-progress" href="/clipart-vector/progress.html">progress</a>
+                </div>
+              </div>
+              <div class="dp-flex align-items-center justify-content-center mt-20">
+                <img class="mr-10" id="see-more-keyword" alt="See More Keyword" src="https://assets-cdn.123rf.com/ui-components/assets/images/down-arrow-icon.png" width="13px">
+                <span class="font-weight-bold">Show More</span>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+      <div class="similar-content__container">
+        <h3 class="similar-content__title">Similar Royalty-Free Photos (Vector, SVG, and EPS)</h3>
+       <div class="gallery__wrapper">
+        <div class="thumbnail__wrapper">
+          <a id="searchthumbnail-41086401-link" href="/photo_41086401_level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.html" class="ImageThumbnail__link" aria-label="imagethumbnail-searchthumbnail-41086401">
+            <div class="ImageThumbnail__overlay"></div>
+            <img src="https://us.123rf.com/450wm/magurok/magurok1506/magurok150600014/41086401-level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.jpg?ver=6" class="ImageThumbnail__image ImageThumbnail__image--beta" alt="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" title="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" loading="lazy">
+          </a>
+        </div>
+        <div class="thumbnail__wrapper">
+          <a id="searchthumbnail-41086401-link" href="/photo_41086401_level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.html" class="ImageThumbnail__link" aria-label="imagethumbnail-searchthumbnail-41086401">
+            <div class="ImageThumbnail__overlay"></div>
+            <img src="https://us.123rf.com/450wm/magurok/magurok1506/magurok150600014/41086401-level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.jpg?ver=6" class="ImageThumbnail__image ImageThumbnail__image--beta" alt="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" title="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" loading="lazy">
+          </a>
+        </div>
+        <div class="thumbnail__wrapper">
+          <a id="searchthumbnail-41086401-link" href="/photo_41086401_level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.html" class="ImageThumbnail__link" aria-label="imagethumbnail-searchthumbnail-41086401">
+            <div class="ImageThumbnail__overlay"></div>
+            <img src="https://us.123rf.com/450wm/magurok/magurok1506/magurok150600014/41086401-level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.jpg?ver=6" class="ImageThumbnail__image ImageThumbnail__image--beta" alt="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" title="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" loading="lazy">
+          </a>
+        </div>
+        <div class="thumbnail__wrapper">
+          <a id="searchthumbnail-41086401-link" href="/photo_41086401_level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.html" class="ImageThumbnail__link" aria-label="imagethumbnail-searchthumbnail-41086401">
+            <div class="ImageThumbnail__overlay"></div>
+            <img src="https://us.123rf.com/450wm/magurok/magurok1506/magurok150600014/41086401-level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.jpg?ver=6" class="ImageThumbnail__image ImageThumbnail__image--beta" alt="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" title="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" loading="lazy">
+          </a>
+        </div>
+        <div class="thumbnail__wrapper">
+          <a id="searchthumbnail-41086401-link" href="/photo_41086401_level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.html" class="ImageThumbnail__link" aria-label="imagethumbnail-searchthumbnail-41086401">
+            <div class="ImageThumbnail__overlay"></div>
+            <img src="https://us.123rf.com/450wm/magurok/magurok1506/magurok150600014/41086401-level-selection-screen-sunny-hills-level-concept-creative-ui-templates-set-for-web-mobile-and.jpg?ver=6" class="ImageThumbnail__image ImageThumbnail__image--beta" alt="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" title="Level selection screen sunny hills level concept creative ui templates set for web mobile and computer video games Vector Illustration" loading="lazy">
+          </a>
+        </div>
+       </div>
+      </div>
+      <div class="button__to-top">
+        <img src="https://assets-cdn.123rf.com/ui-components/assets/images/up-arrow-icon-dark.png" alt="to-top-page" width="16px" height="9px">
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer-link__container">
+          <div class="footer-link__left col-md-6 col-lg-3 p-0">
+            <div class="footer-link__item col-md-6 col-lg-3 p-0">
+              <div class="footer-link__session">
+                <div class="footer-link__menu footer-link__title font-weight-bold d-flex justify-content-between align-items-center" role="menuitem" tabindex="0">
+                  <span class="footer-link__title_text">About</span>
+                </div>
+                <div class="footer-link__sub-menu">
+                  <div class="mt-5">
+                    <a id="footer-link-our-story" class="footer-link__sub-menu_item bold">Our Story</a>
+                  </div>
+                  <div class="mt-5">
+                    <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Blog</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-link__item footer-link__session--mt">
+              <div class="footer-link__session">
+                <div class="footer-link__menu footer-link__title font-weight-bold d-flex justify-content-between align-items-center" role="menuitem" tabindex="0">
+                  <span class="footer-link__title_text">Monetize your creations</span>
+                </div>
+                <div class="footer-link__sub-menu">
+                  <div class="mt-5">
+                    <a id="footer-link-our-story" class="footer-link__sub-menu_item bold" href="/ourstory/">123RF Contributors</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-link__item col-md-6 col-lg-3 p-0">
+            <div class="footer-link__session">
+              <div class="footer-link__menu footer-link__title font-weight-bold d-flex justify-content-between align-items-center" role="menuitem" tabindex="0">
+                <span class="footer-link__title_text">Services</span>
+              </div>
+              <div class="footer-link__sub-menu">
+                <div class="mt-5">
+                  <a id="footer-link-our-story" class="footer-link__sub-menu_item bold">Tools</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Corporate+</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">123RF Partners Program</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">123RF AI</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Developers/API</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Become An Affiliate</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Promo Code</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Categories</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-link__item col-md-6 col-lg-3 p-0">
+            <div class="footer-link__session">
+              <div class="footer-link__menu footer-link__title font-weight-bold d-flex justify-content-between align-items-center" role="menuitem" tabindex="0">
+                <span class="footer-link__title_text">Policies</span>
+              </div>
+              <div class="footer-link__sub-menu">
+                <div class="mt-5">
+                  <a id="footer-link-our-story" class="footer-link__sub-menu_item bold">Legal</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Licensing</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Privacy Policy</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Terms of use</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Cookie policy</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="FooterLinks__linkListItem bold">Security Disclosure Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-link__item col-md-6 col-lg-3 p-0">
+            <div class="footer-link__session">
+              <div class="footer-link__menu footer-link__title font-weight-bold d-flex justify-content-between align-items-center" role="menuitem" tabindex="0">
+                <span class="footer-link__title_text">Support</span>
+              </div>
+              <div class="footer-link__sub-menu">
+                <div class="mt-5">
+                  <a id="footer-link-our-story" class="footer-link__sub-menu_item bold">Contact</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog" class="footer-link__sub-menu_item bold">Support</a>
+                </div>
+                <div class="footer-link__session--mt">
+                  <a id="footer-link-blog" >Need help? Contact your dedicated Account Manager</a>
+                </div>
+                <div class="mt-5">
+                  <a id="footer-link-blog">@ 021 2988 8224</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-base__wrapper">
+          <div class="footer-base__container">
+            <div class="footer-base__copyright">All rights reserved. © Inmagine Lab Pte Ltd 2023.</div>
+            <div class="footer-base__social col-sm-6 p-0 d-flex align-items-center">
+              <a href="https://www.123rf.com/discord" rel="noreferrer noopener" target="_blank" id="social-discord">
+                <img alt="Discord" src="https://assets-cdn.123rf.com/ui-components/assets/svg/discord-v2.svg" width="32px" height="32px">
+              </a>
+              <a href="https://www.facebook.com/123rf" rel="noreferrer noopener" target="_blank" id="social-facebook">
+                <img alt="Facebook" src="https://assets-cdn.123rf.com/ui-components/assets/svg/facebook.svg" width="32px" height="32px">
+              </a>
+              <a href="https://twitter.com/123rf" rel="noreferrer noopener" target="_blank" id="social-twitter">
+                <img alt="Twitter" src="https://assets-cdn.123rf.com/ui-components/assets/svg/twitter.svg" width="32px" height="32px">
+              </a>
+              <a href="https://instagram.com/123rf" rel="noreferrer noopener" target="_blank" id="social-instagram">
+                <img alt="Instagram" src="https://assets-cdn.123rf.com/ui-components/assets/svg/instagram-v2.svg" width="32px" height="32px">
+              </a>
+              <a href="https://pinterest.com/123rf/" rel="noreferrer noopener" target="_blank" id="social-pinterest">
+                <img alt="Pinterest" src="https://assets-cdn.123rf.com/ui-components/assets/svg/pinterest.svg" width="32px" height="32px">
+              </a>
+              <a href="https://wa.me/message/5ATCPNSGCZRUD1?src=qr" rel="noreferrer noopener" target="_blank" id="social-whatsapp">
+                <img alt="Whatsapp" src="https://assets-cdn.123rf.com/ui-components/assets/svg/whatsapp-v2.svg" width="32px" height="32px">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modalPopup" class="modal modal__container fade show">
+      <!-- Modal content -->
+      <div class="modal__content_wrapper">
+        <div class="modal__content download-modal__content">
+          <span class="button__close position-absolute" role="button" tabindex="0">
+            <img src="https://assets-cdn.123rf.com/ui-components/assets/images/close.png" alt="Close"
+              style="width: 14px; height: 14px;">
+          </span>
+          <div class="modal__body download-modal__body_container">
+            <h2>Modal title</h2>
+            <p>Ths is a modal popup. To show click on download buttons and to close click 'X'. PUt your desired
+              content inside. </p>
+            <button id="next-button" type="button"
+              class="button button__wrapper button__link button__wrapper--round button__wrapper--primary button__next"
+              tabindex="0">
+              Next
+            </button>
+            <span class="modal__link">Want more savings?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
